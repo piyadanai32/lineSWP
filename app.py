@@ -49,7 +49,7 @@ def handle_message(event):
     text_from_user = event.message.text
 
     is_group = hasattr(event.source, 'type') and event.source.type in ['group', 'room']
-    bot_name = "edubot"
+    bot_name = "น้องสวพ."
     should_respond = False
     actual_message = text_from_user
 
