@@ -64,7 +64,7 @@ def handle_message(event):
 
     if should_respond:
         if not actual_message:
-            reply_text = f"สวัสดีครับ ผมคือ {bot_name} คุณต้องการสอบถามอะไรครับ?"
+            reply_text = f"สวัสดีค่ะ หนูชื่อ {bot_name} คุณต้องการสอบถามอะไรค่ะ?"
         else:
             user_session_id = f"{SESSION_ID}-{user_id}"
             response = detect_intent_texts(DIALOGFLOW_PROJECT_ID, user_session_id, actual_message, 'th')
